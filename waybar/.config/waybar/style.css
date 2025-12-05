@@ -1,4 +1,4 @@
-@import "mocha.css"; 
+@import "mocha.css";
 
 * {
     font-family: "MesloLGS Nerd Font Mono Bold";
@@ -18,8 +18,8 @@ window#waybar {
 
 #window {
     margin: 8px;
-    padding-left: 8;
-    padding-right: 8;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 button {
@@ -55,6 +55,7 @@ button:hover {
 }
 
 #pulseaudio,
+#bluetooth,
 #clock,
 #battery,
 #cpu,
@@ -67,12 +68,12 @@ button:hover {
 #network,
 #mode,
 #scratchpad {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #clock {
@@ -83,6 +84,11 @@ button:hover {
 #clock.date {
     color: @mauve;
     border-bottom: 2px solid @mauve;
+}
+
+#bluetooth {
+    color: @teal;
+    border-bottom: 2px solid @teal;
 }
 
 #pulseaudio {
