@@ -2,18 +2,30 @@
 
 * {
     font-family: "MesloLGS Nerd Font Mono Bold";
-    font-size: 16px;
+    font-size: 14px;
     min-height: 0;
     font-weight: bold;
 }
 
+tooltip * {
+    background: transparent;
+    border: none
+}
+
+tooltip.background {
+    background: rgba(29, 32, 33, 0.7);
+    border-radius: 16px;
+    border: 1px solid rgba(29, 32, 33, 0.8);
+}
+
 window#waybar {
     background: transparent;
-    background-color: @crust;
-    color: @overlay0;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition-property: background-color;
     transition-duration: 0.1s;
-    border-bottom: 1px solid @overlay1;
+    /* border-bottom: 1px solid @overlay1; */
 }
 
 #window {
@@ -31,23 +43,38 @@ button {
 button:hover {
     background: inherit;
     color: @mauve;
-    border-top: 2px solid @mauve;
+}
+
+.modules-left {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.modules-right {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#workspaces {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
 }
 
 #workspaces button {
-    padding: 0 4px;
+    border-radius: 100px;
+    padding: 10px 20px;
 }
 
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
     color: @rosewater;
-    border-top: 2px solid @rosewater;
+    /* border-top: 2px solid @rosewater; */
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
     color: @mauve;
-    border-top: 2px solid @mauve;
+    /* border-top: 2px solid @mauve; */
 }
 
 #workspaces button.urgent {
@@ -68,37 +95,32 @@ button:hover {
 #network,
 #mode,
 #scratchpad {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 4px;
-    margin-right: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin-right: 8px;
+
+    border-radius: 100px;
+    padding: 10px 20px;
+
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #clock {
     color: @maroon;
-    border-bottom: 2px solid @maroon;
 }
 
 #clock.date {
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
+    color: @maroon;
 }
 
 #bluetooth {
     color: @teal;
-    border-bottom: 2px solid @teal;
 }
 
 #pulseaudio {
     color: @blue;
-    border-bottom: 2px solid @blue;
 }
 
 #network {
     color: @yellow;
-    border-bottom: 2px solid @yellow;
 }
 
 #idle_inhibitor {
@@ -112,17 +134,6 @@ button:hover {
 
 #battery {
     color: @green;
-    border-bottom: 2px solid @green;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-    margin-right: 0;
 }
 
 #custom-vpn {
