@@ -50,7 +50,7 @@ window#waybar {
 
 #workspaces button {
     border-radius: 100px;
-    padding: 10px 15px;
+    padding: 8px 15px;
 }
 
 button:hover {
@@ -100,7 +100,7 @@ button:hover {
     margin-right: 8px;
 
     border-radius: 100px;
-    padding: 10px 15px;
+    padding: 8px 15px;
 
     background-color: rgba(0, 0, 0, 0.3);
 }
