@@ -16,6 +16,7 @@
     "pulseaudio",
     "battery",
     "clock",
+    "idle_inhibitor",
     "tray"
   ],
   "gamemode": {
@@ -141,6 +142,13 @@
       "on-click-right": "mode",
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
+    }
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " ",
+      "deactivated": " "
     }
   },
   "tray": {
