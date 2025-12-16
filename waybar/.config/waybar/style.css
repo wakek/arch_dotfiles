@@ -70,7 +70,7 @@ window#waybar {
     margin-right: 15px;
     margin-top: 15px;
 
-    padding: 6px 15px;
+    padding: 0px;
 
     border-radius: 100px;
 
@@ -93,7 +93,15 @@ window#waybar {
 #network,
 #mode,
 #scratchpad,
+#gamemode,
 #idle_inhibitor {
     border-radius: 100px;
-    padding: 0px 15px;
+    padding: 6px 15px;
+}
+
+#tray {
+    border-radius: 100px;
+    padding: 6px 15px;
+
+    background-color: rgba(0, 0, 0, 0.2);
 }
