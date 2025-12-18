@@ -8,3 +8,5 @@ sudo intel-undervolt apply
 sudo dell-bios-fan-control 1 
 
 sudo systemctl stop i8kmon.service;
+
+notify-send -u low -t 3000 "GameMode Ended" "🍃 Silent Mode Restored"

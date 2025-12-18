@@ -8,3 +8,5 @@ sudo intel-undervolt apply
 sudo dell-bios-fan-control 0 
 
 sudo systemctl start i8kmon.service
+
+notify-send -u critical -t 3000 "GameMode Active" "🚀 Jet Engine ON | CPU Limit: 18W"
