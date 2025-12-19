@@ -1,9 +1,9 @@
 #!/bin/bash
 sudo -n cpupower frequency-set -u 4.1GHz 
 
-sudo cp /etc/intel-undervolt-work.conf /etc/intel-undervolt.conf 
+sudo cp ~/Data/Projects/arch_dotfiles/throttled/throttled-work.conf /etc/throttled.conf
 
-sudo intel-undervolt apply 
+sudo systemctl enable --now throttled
 
 sudo dell-bios-fan-control 1 
 

@@ -1,9 +1,9 @@
 #!/bin/bash
-sudo -n cpupower frequency-set -u 2.5GHz 
+sudo -n cpupower frequency-set -u 2.4GHz 
 
-sudo cp /etc/intel-undervolt-game.conf /etc/intel-undervolt.conf 
+sudo cp ~/Data/Projects/arch_dotfiles/throttled/throttled-game.conf /etc/throttled.conf
 
-sudo intel-undervolt apply 
+sudo systemctl enable --now throttled
 
 sudo dell-bios-fan-control 0 
 
